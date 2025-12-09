@@ -1,0 +1,19 @@
+name: kitti
+channels:
+  - pytorch          # <-- Add pytorch channel (highest priority)
+  - nvidia           # <-- Add nvidia channel for CUDA
+  - defaults
+  - conda-forge      # (Optional, but good for other packages)
+dependencies:
+  - python=3.12           # CARLA and Open3D are most stable with 3.8–3.10
+  - pip
+  - numpy              
+  - opencv             
+  - matplotlib
+  - open3d         
+  - scipy
+  - pandas
+  - tqdm
+  - pip:
+      - pygame            # often needed for CARLA clients
+      - carla             # optional: only works if wheel available for your platform

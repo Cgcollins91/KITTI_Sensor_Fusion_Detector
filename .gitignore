@@ -1,0 +1,11 @@
+training/
+testing/
+__pycache__/
+*.pyc
+/test.avi
+
+*.pt
+*.mp4
+*.webm
+*.pth
+Archive/
